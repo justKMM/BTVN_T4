@@ -43,10 +43,6 @@ function registration()
 		{
 			alert('Enter Confirm Password');
 		}
-		else if(!pwd_expression.test(pwd))
-		{
-			alert ('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
-		}
 		else if(pwd != cpwd)
 		{
 			alert ('Password not Matched');
@@ -68,8 +64,7 @@ function registration()
                alert('Registration Completed');
 	
 		}
-	    }
-        }
+	}
 
 function clearFunc(){
 	document.getElementById("t1").value="";
