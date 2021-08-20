@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href='form.css' rel='stylesheet'>
+</head>
+
+	<body>
+    <div id="main">
+    <div class="h-tag">
+    <h2>Create Your Account</h2>
+    </div>
+    <div class="login">
+    <table align="center" cellpadding="8" border="0">
+
+    <tr>
+    <td align="right">Enter Name :</td>
+    <td><input type="text" placeholder="Enter user here" id="t1" class="tb"/></td>
+    </tr>
+
+    <tr>
+    <td align="right">Enter Email ID :</td>
+    <td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb"/></td>
+    </tr>
+
+    <tr>
+    <td align="right">Enter Username :</td>
+    <td><input type="text" placeholder="Enter Username here" id="t3" class="tb"/></td>
+    </tr>
+
+    <tr>
+    <td align="right">Enter Password :</td>
+    <td><input type="password" placeholder="Enter Password here" id="t4" class="tb"/></td>
+    </tr>
+
+    <tr>
+    <td align="right">Enter Confirm Password :</td>
+    <td><input type="password" placeholder="Enter Password here" id="t5" class="tb"/></td>
+    </tr>
+
+    <tr><td align="right"><label id="t6">Language:</label></td></tr>
+    <tr><td align="right"><select name="language">
+      <option selected="" value="Default">Select a language</option>
+      <option value="VN">Tiếng Việt</option>
+      <option value="EN">English</option>
+      <option value="DE">Deutsch</option>
+      <option value="FR">français</option>
+      <option value="RU">русский</option>
+      <option value="CH">中国人</option>
+      <option value="..">...</option>
+    </select></td></tr>
+
+    <tr>
+    <td></td>
+    <td>
+    <input type="reset" value="Clear Form"  id="res" class="btn" onclick="clearFunc()">
+    <input type="submit" value="Create Account" class="btn" onclick="registration()">
+    </td>
+    </tr>
+    </table>
+    </div>
+    </div>
+    
+    <script src="form.js"></script>
+
+	</body>
+	</html>
