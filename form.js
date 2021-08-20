@@ -58,8 +58,9 @@ function registration()
 		else if(document.getElementById("t5").value.length > 12)
 		{
 			alert ('Password max length is 12');
+		}
         else if(language=='')
-            {
+        {
             alert ('Choose your language');
 		}
 		else
@@ -70,8 +71,7 @@ function registration()
 	    }
         }
 
-function clearFunc()
-	{
+function clearFunc(){
 	document.getElementById("t1").value="";
 	document.getElementById("t2").value="";
 	document.getElementById("t3").value="";
@@ -80,13 +80,13 @@ function clearFunc()
     document.getElementById("t6").value="";
 	}
 
-let user = localStorage.getItem("nguoidung");
-user = JSON.parse(user);
+// let user = localStorage.getItem("nguoidung");
+// user = JSON.parse(user);
 
-document.getElementById("showInfo").innerHTML = `
-    <p>Name: ${user.name} </p>
-    <p>Email: ${user.email} </p>
-    <p>Username: ${user.uname} </p>
-    <p>Password: ${user.pwd} </p>
-    <p>Language: ${user.language} </p>
-`;
+// document.getElementById("showInfo").innerHTML = `
+//     <p>Name: ${user.name} </p>
+//     <p>Email: ${user.email} </p>
+//     <p>Username: ${user.uname} </p>
+//     <p>Password: ${user.pwd} </p>
+//     <p>Language: ${user.language} </p>
+// `;
